@@ -1,0 +1,19 @@
+CREATE DATABASE micafeteria;
+
+CREATE TABLE cafe (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(20) NOT NULL,
+    precio FLOAT NOT NULL,
+    Tamaño VARCHAR(20) DEFAULT '0',
+    date_registro date,
+    estado VARCHAR(20) NOT NULL DEFAULT 'disponible'
+);
+
+INSERT INTO `cafe` (`nombre`, `precio`, `Tamaño`, `date_registro`) VALUES (NULL, 'LA MEXICANA', '70', 'Chico', '2023-04-25');
+
+INSERT INTO `cafe` (`nombre`, `precio`, `Tamaño`, `date_registro`) VALUES ('Expreso', '100', 'Mediano', '2023-04-25');
+
+INSERT INTO `cafe` (`nombre`, `precio`, `Tamaño`, `date_registro`) VALUES ('Americano', '75.9', 'Chico', '2023-04-26');
+
+INSERT INTO `cafe` (`nombre`, `precio`, `Tamaño`, `date_registro`) VALUES ('Americano', '105.9', 'Mediano', '2023-04-26');
+
